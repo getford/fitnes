@@ -1,0 +1,21 @@
+﻿<Window x:Class="fitnes.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:fitnes"
+        mc:Ignorable="d"
+        Title="Window3" Height="651.164" Width="944.187" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="4.JPG"/>
+        </Grid.Background>
+        <TextBox x:Name="resKalorii" HorizontalAlignment="Left" Height="37" Margin="280,358,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="107" FontSize="19" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <Button Content="Ok" HorizontalAlignment="Left" Margin="428,428,0,0" VerticalAlignment="Top" Width="70" Height="25" Click="Button_Click"/>
+
+    </Grid>
+</Window>

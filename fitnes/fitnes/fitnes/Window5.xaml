@@ -1,0 +1,67 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:fitnes"
+        xmlns:Odbc="clr-namespace:System.Data.Odbc;assembly=System.Data" x:Class="fitnes.Window5"
+        xmlns:col="clr-namespace:System.Collections;assembly=mscorlib"    
+    mc:Ignorable="d"
+        Title="Window5" Height="626" Width="788">
+    <Grid Margin="0,0,2,-20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="104*"/>
+            <ColumnDefinition Width="144*"/>
+            <ColumnDefinition Width="881*"/>
+        </Grid.ColumnDefinitions>
+
+        <ListView x:Name="listViewBreakfast" HorizontalAlignment="Left" Height="160" Margin="10,26,0,0" VerticalAlignment="Top" Width="746" Grid.ColumnSpan="3" ItemsSource="{DynamicResource ResourceKey=historyBreakfast}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Date}" Width="200">Дата</GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Product}" Width="200">Продукт</GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Kalorii}" Width="200">Каллории</GridViewColumn>
+                </GridView>
+            </ListView.View>
+            <ListView.Resources>
+                <col:ArrayList x:Key="historyBreakfast">
+
+                </col:ArrayList>
+            </ListView.Resources>
+        </ListView>
+
+        <ListView x:Name="listViewLunch" HorizontalAlignment="Left" Height="160" Margin="10,222,0,0" VerticalAlignment="Top" Width="746" Grid.ColumnSpan="3" ItemsSource="{DynamicResource ResourceKey=historyLunch}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Date}" Width="200">Дата</GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Product}" Width="200">Продукт</GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Kalorii}" Width="200">Каллории</GridViewColumn>
+                </GridView>
+            </ListView.View>
+            <ListView.Resources>
+                <col:ArrayList x:Key="historyLunch">
+
+                </col:ArrayList>
+            </ListView.Resources>
+        </ListView>
+
+        <ListView x:Name="listViewDinner" HorizontalAlignment="Left" Height="160" Margin="10,413,0,0" VerticalAlignment="Top" Width="746" Grid.ColumnSpan="3" ItemsSource="{DynamicResource ResourceKey=historyDinner}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Date}" Width="200">Дата</GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Product}" Width="200">Продукт</GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Kalorii}" Width="200">Каллории</GridViewColumn>
+                </GridView>
+            </ListView.View>
+            <ListView.Resources>
+                <col:ArrayList x:Key="historyDinner">
+
+                </col:ArrayList>
+            </ListView.Resources>
+        </ListView>
+        <Label Content="Завтрак" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.947,0.154"/>
+        <Label Content="Обед" HorizontalAlignment="Left" Margin="10,191,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.947,0.154"/>
+        <Label Content="Ужин" HorizontalAlignment="Left" Margin="10,387,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.947,0.154"/>
+
+    </Grid>
+</Window>

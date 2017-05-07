@@ -1,0 +1,63 @@
+﻿<Window x:Class="fitnes.Window4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:fitnes"
+        mc:Ignorable="d"
+        Title="Window4" Height="651.164" Width="944.187" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="5.jpg"/>
+    </Window.Background>
+    <Grid>
+        <TextBox x:Name="weightProd" HorizontalAlignment="Left" Height="33" Margin="369,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="sumKallorii" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="553,447,0,0" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <Button Content="Ok" HorizontalAlignment="Left" Margin="401,383,0,0" VerticalAlignment="Top" Width="70" Height="25" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <ComboBox x:Name="eatDate" HorizontalAlignment="Left" Margin="624,161,0,0" VerticalAlignment="Top" Width="160" SelectionChanged="ComboBox_SelectionChanged" Height="33" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+        </ComboBox>
+        <ComboBox x:Name="prod" HorizontalAlignment="Left" Margin="496,240,0,0" VerticalAlignment="Top" Width="177" Height="33" SelectionChanged="ComboBox_SelectionChanged_1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="zavtrak" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="553,485,0,0" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="obed" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="553,523,0,0" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox x:Name="yzin" HorizontalAlignment="Left" Height="33" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="553,561,0,0" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <Button x:Name="history" Content="History" HorizontalAlignment="Left" Margin="728,30,0,0" VerticalAlignment="Top" Width="150" Height="25" Click="Button_History_Click" RenderTransformOrigin="-3.5,7.72">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="createNewUser" Content="Create new user" HorizontalAlignment="Left" Margin="523,30,0,0" VerticalAlignment="Top" Width="150" Height="25" Click="Button_cnu_Click" RenderTransformOrigin="-3.5,7.72">
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="labelUser" Content="Label user" HorizontalAlignment="Left" Margin="19,20,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.237,0.615" FontSize="20" Foreground="White"/>
+        <Label Content="Суммарно" HorizontalAlignment="Left" Margin="697,454,0,0" VerticalAlignment="Top"/>
+        <Label Content="Завтрак" HorizontalAlignment="Left" Margin="697,492,0,0" VerticalAlignment="Top"/>
+        <Label Content="Обед" HorizontalAlignment="Left" Margin="697,530,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ужин" HorizontalAlignment="Left" Margin="697,568,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelWhatUWant" Content="Label user" HorizontalAlignment="Left" Margin="19,71,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.237,0.615" FontSize="20" Foreground="White"/>
+    </Grid>
+</Window>
